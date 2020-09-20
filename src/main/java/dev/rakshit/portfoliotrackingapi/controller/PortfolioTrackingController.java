@@ -18,7 +18,6 @@ import java.util.Optional;
 
 @Slf4j
 @RestController
-@RequestMapping("/api/portfolio-tracking/")
 public class PortfolioTrackingController {
 
     @Autowired
