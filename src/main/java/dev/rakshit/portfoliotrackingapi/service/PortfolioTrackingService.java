@@ -135,6 +135,7 @@ public class PortfolioTrackingService {
     private void saveHolding(Holding holding) {
         if (BigInteger.ZERO.equals(holding.getShares())) {
             holdingRepository.deleteById(holding.getTicker());
+            return;
         }
         holdingRepository.save(holding);
     }
